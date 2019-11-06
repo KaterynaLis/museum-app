@@ -3,32 +3,43 @@
     <header>
             <title>Composition London, 1940-42</title>
             <link rel="stylesheet" type="text/css" media="screen" href="detail-page.css" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet">
     </header>   
 
     <body>
     <main>
         <section id="content">
-            <p>Katya's Mobile Museum App</p>
+            <p id="header">Katya's Mobile Museum App</p>
             <h1>Composition London, 1940-42</h1>
             <img class="ArtObject" src="https://www.piet-mondrian.org/images/paintings/composition-london.jpg" alt="Composition London, 1940-42"> 
         </section>
 
         <section id="comments">
             <h2>Comments</h2>
-            <section id="comment"></section> 
-                <h3></h3>
-                <p></p>
+            <section id="comment">
+                <h3>Pieter says</h3>
+                <p>Is that art?</p>
 
             </section>
         </section>
 
-        <section>
-            <form action="">
-                <div class="formSection"></div>
-                <div class="formSection"></div>
-                <div class="button"></div>
-            </form>
-        </section>
+       
+        <form onsubmit="submitComment(); return false">
+            <div class="formSection">
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+            </div>
+            <div class="formSection">
+                 <label for="msg">Message:</label>
+                 <textarea id="msg"></textarea>
+             </div>
+             <div class="button">
+                 <button type="default">Post your comment</button>
+             </div>
+        </form>
+
+        
     </main>
         <footer>Made with ❤ at Codaisseur</footer>
     </body>
