@@ -19,16 +19,16 @@
             <h2>Comments</h2>
             <section id="comment">
                 <h3>Pieter says</h3>
-                <p>Is that art?</p>
+                <p>"Is that art?"</p>
 
             </section>
         </section>
 
-       
-        <form onsubmit="submitComment(); return false">
+      
+        <form id="commentForm" onsubmit="submitComment(); return false">
             <div class="formSection">
                 <label for="name">Name:</label>
-                <input type="text" id="name" />
+                <input type="text" placeholder="type your name here" id="name" />
             </div>
             <div class="formSection">
                  <label for="msg">Message:</label>
@@ -38,7 +38,7 @@
                  <button type="default">Post your comment</button>
              </div>
         </form>
-
+   
         
     </main>
         <footer>Made with ❤ at Codaisseur</footer>

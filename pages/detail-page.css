@@ -53,6 +53,42 @@ footer {
     border-color: black;
     border-width: 5px;
     border-style: solid;
-    width: 100px;
+    width: 350px;
+    margin: 0 auto;
+    color: white;
+    font-size: 120%;
     
+}
+#commentForm {
+    background: rgb(60, 112, 162);
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    width: 350px;
+    margin: 20px auto;
+    height: 300px;
+
+}
+.formSection {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 20px auto;
+}
+
+.button {
+    background: rgb(60, 112, 162);
+}
+
+#name{
+    height: 20px;
+    width: 70%;
+}
+
+#msg {
+    width: 70%;
+    height: 100px;
+}
+label {
+    display: inline-block;
+    width: 80%;
 }
