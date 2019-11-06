@@ -14,14 +14,14 @@ main {
     margin: 50px;
 }
 #header {
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 5%;
     
 }
 
 h1{
 
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -80,15 +80,39 @@ footer {
 }
 
 #name{
-    height: 20px;
+    height: 30px;
     width: 70%;
+    background:rgb(228,184,0);
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 15px;
+    font-family: inherit;
 }
 
 #msg {
     width: 70%;
     height: 100px;
+    background:rgb(228,184,0);
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    font-family: inherit;
+    font-size: 15px;
 }
 label {
     display: inline-block;
     width: 80%;
+}
+
+#SubmitButton {
+
+    background:rgb(115,22,6);
+    font-family: inherit;
+    color: white;
+    font-size: 17px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+
 }
