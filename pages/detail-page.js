@@ -22,6 +22,10 @@ function submitComment(){
     const message = textArea.value
         console.log(message)
 
+    if (Validation(name, message)) {
+         return null
+     }
+
     const comment = document.createElement('section')
         console.log(comment)
 
@@ -30,6 +34,7 @@ function submitComment(){
 
     const p = document.createElement('p')
         console.log(p)  
+
 
     h3.innerHTML = `${name} said:`
     p.innerHTML = message
@@ -47,9 +52,7 @@ function submitComment(){
     inputField.value = null;
     textArea.value = null;
 
-    //  if (Validations(name, message)) {
-    //      return null
-    //  }
+    
 }
 
 
