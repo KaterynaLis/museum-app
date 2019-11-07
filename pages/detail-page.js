@@ -1,3 +1,6 @@
 function submitComment(){
-    console.log("i am also here!")}
+    const inputField = document.getElementById("name")
+    const name = inputField.value
+    console.log(name)
+}
 
