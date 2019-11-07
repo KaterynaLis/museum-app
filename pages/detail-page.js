@@ -1,3 +1,18 @@
+
+function Validation(name, message) {
+    if (!name || !message) {
+        alert('Please fill up you name and message')
+        return true; 
+    } 
+
+    if (message.lenght > 5) {
+        alert('Your message is too long')
+        return true;
+    }
+    return false;
+}
+
+
 function submitComment(){
     const inputField = document.getElementById("name")
     const name = inputField.value
@@ -24,8 +39,17 @@ function submitComment(){
         console.log(comment)
 
 
-     const commentSection = document.getElementById("comments")
+    const commentSection = document.getElementById("comments")
         console.log(commentSection)
-     commentSection.appendChild(comment)
+
+    commentSection.appendChild(comment)
+
+    inputField.value = null;
+    textArea.value = null;
+
+    //  if (Validations(name, message)) {
+    //      return null
+    //  }
 }
+
 

@@ -59,6 +59,20 @@ footer {
     font-size: 120%;
     
 }
+
+.comment {
+    background: rgb(170, 7, 1);
+    text-align: center;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    width: 350px;
+    margin: 0 auto;
+    color: white;
+    font-size: 120%;
+    margin-top: 10px;
+}
+
 #commentForm {
     background: rgb(60, 112, 162);
     border-color: black;
