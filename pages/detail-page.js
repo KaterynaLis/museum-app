@@ -15,5 +15,13 @@ function submitComment(){
 
     const p = document.createElement('p')
         console.log(p)  
+
+        h3.innerHTML = `${name} said:`
+        p.innerHTML = message
+        comment.classList.add('comment')
+        comment.appendChild(h3)
+        comment.appendChild(p)
+      
+        console.log(comment)
 }
 
