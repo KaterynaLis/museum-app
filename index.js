@@ -338,8 +338,17 @@ const data = {
      console.log(_title_of_painting_)
 
       //get url op pic
-     const _url_of_web_image_ = paintings[x].webImage.url
+     const _url_of_web_image_ = paintings[x].webImage.url 
      console.log(_url_of_web_image_)
 
-      console.log(paintings[x])
+     //create link element
+     const link = document.createElement('a')
+     console.log(link)
+     link.href = "./pages/detail-page.html"
+     
+     //create img elem
+
+     link.innerHTML= 
+     
+      console.log(paintings[x].webImage)
   }
