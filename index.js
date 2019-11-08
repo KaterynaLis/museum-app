@@ -331,10 +331,11 @@ const data = {
 
 
   for  (x=0; x<data.artObjects.length; x++){
-
+      if (paintings[x].webImage.width > 2500){
       const currentPainting = paintings[x]
       displayPainting(currentPainting)
   }
+}
 
   function displayPainting(painting){
       
