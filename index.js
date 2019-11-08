@@ -14,10 +14,10 @@ const data = {
         },
         id: "nl-SK-A-180",
         objectNumber: "SK-A-180",
-        title: "Een vrolijke vioolspeler",
+        title: "Composition London, 1940-42",
         hasImage: true,
-        principalOrFirstMaker: "Gerard van Honthorst",
-        longTitle: "Een vrolijke vioolspeler, Gerard van Honthorst, 1623",
+        principalOrFirstMaker: "Piet Mondrian",
+        longTitle: "EComposition London, 1940-42",
         showImage: false,
         permitDownload: false,
         webImage: {
@@ -26,7 +26,7 @@ const data = {
           offsetPercentageY: 0,
           width: 2500,
           height: 2500,
-          url: "https://lh3.googleusercontent.com/V3sjNgCA_Jssjm0sTKaPZeOwCv_vAPpjllrAF-yAB8UkqIlc6UX_jxJmxH_axVHTHxlK1E7Slecg8K5bIvSbDlw0zg"
+          url: "https://www.piet-mondrian.org/images/paintings/composition-london.jpg"
         },
         headerImage: {
           guid: "03e0bed7-56ce-48f4-828a-6a3c96f578f1",
@@ -34,7 +34,7 @@ const data = {
           offsetPercentageY: 0,
           width: 460,
           height: 460,
-          url: "https://lh3.googleusercontent.com/lqio6vHMqpMaVBeWBHUxhqpgnyYsTG24Xf-6o2JzuRscjt5TphP3DKoDX-M8VnrDAtnyEI_ROpnSVvttlGWba_3pfwo"
+          url: "https://www.piet-mondrian.org/images/paintings/composition-london.jpg"
         },
         productionPlaces: [ ]
         },
@@ -47,7 +47,7 @@ const data = {
           objectNumber: "SK-A-1505",
           title: "Een molen aan een poldervaart, bekend als ‘In de maand juli’",
           hasImage: true,
-          principalOrFirstMaker: "Paul Joseph Constantin Gabriël",
+          principalOrFirstMaker: "PPiet Mondrian",
           longTitle: "Een molen aan een poldervaart, bekend als ‘In de maand juli’, Paul Joseph Constantin Gabriël, ca. 1889",
           showImage: false,
           permitDownload: false,
@@ -78,7 +78,7 @@ const data = {
           objectNumber: "SK-C-5",
           title: "Schutters van wijk II onder leiding van kapitein Frans Banninck Cocq, bekend als de ‘Nachtwacht’",
           hasImage: true,
-          principalOrFirstMaker: "Rembrandt van Rijn",
+          principalOrFirstMaker: "Piet Mondrian",
           longTitle: "Schutters van wijk II onder leiding van kapitein Frans Banninck Cocq, bekend als de ‘Nachtwacht’, Rembrandt van Rijn, 1642",
           showImage: false,
           permitDownload: false,
@@ -111,7 +111,7 @@ const data = {
           objectNumber: "SK-A-2525",
           title: "Eenden",
           hasImage: true,
-          principalOrFirstMaker: "Willem Maris",
+          principalOrFirstMaker: "Piet Mondrian",
           longTitle: "Eenden, Willem Maris, ca. 1880 - ca. 1904",
           showImage: false,
           permitDownload: false,
@@ -142,7 +142,7 @@ const data = {
           objectNumber: "SK-A-317",
           title: "Orpheus en de dieren",
           hasImage: true,
-          principalOrFirstMaker: "Paulus Potter",
+          principalOrFirstMaker: "Piet Mondrian",
           longTitle: "Orpheus en de dieren, Paulus Potter, 1650",
           showImage: false,
           permitDownload: false,
@@ -327,8 +327,19 @@ const data = {
   
 
   const paintings = data.artObjects
-  console.log(paintings)
+      //console.log(paintings)
+
+  //my function
 
   for  (x=0; x<data.artObjects.length; x++){
+
+      //get title of pic
+     const _title_of_painting_ = paintings[x].title
+     console.log(_title_of_painting_)
+
+      //get url op pic
+     const _url_of_web_image_ = paintings[x].webImage.url
+     console.log(_url_of_web_image_)
+
       console.log(paintings[x])
   }
