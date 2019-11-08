@@ -330,16 +330,20 @@ const data = {
 
 
   for  (x=0; x<data.artObjects.length; x++){
+
     const StringToArr = paintings[x].longTitle.split(" ")
     const yearString = StringToArr[StringToArr.length - 1]
-    const year = parsInt(yearString, 10)
-    console.log(year)
+    console.log(yearString)
+
+    // const year = parsInt(yearString, 10)
+    // console.log(year)
     
-      if (paintings[x].webImage.width > 1500 &&  paintings[x].principalOrFirstMaker !== "Honthorst") {
+     if (paintings[x].webImage.width > 1500 &&  paintings[x].principalOrFirstMaker !== "Honthorst", yearString < 1800) {
       const currentPainting = paintings[x]
+
       displayPainting(currentPainting)
    }
-}
+ }
 
   function displayPainting(painting){
       
@@ -361,4 +365,6 @@ const data = {
     gallery.appendChild(link)
 
   }
+
+  
  
