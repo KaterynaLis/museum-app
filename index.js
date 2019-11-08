@@ -335,20 +335,29 @@ const data = {
 
       //get title of pic
      const _title_of_painting_ = paintings[x].title
-     console.log(_title_of_painting_)
+     //console.log(_title_of_painting_)
 
       //get url op pic
      const _url_of_web_image_ = paintings[x].webImage.url 
-     console.log(_url_of_web_image_)
+     //console.log(_url_of_web_image_)
 
      //create link element
      const link = document.createElement('a')
-     console.log(link)
+     //console.log(link)
      link.href = "./pages/detail-page.html"
      
-     //create img elem
-
-     link.innerHTML= 
      
-      console.log(paintings[x].webImage)
+     //create img elem
+    const image = document.createElement('img')
+    image.src = _url_of_web_image_
+    image.alt = _title_of_painting_
+    image.classList.add("ArtObject")
+
+    link.appendChild(image)
+
+    const gallery = document.getElementById("galery")
+
+    gallery.appendChild(link)
+
+    console.log(paintings[x].webImage)
   }
