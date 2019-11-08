@@ -1,4 +1,4 @@
-console.log("i am here")
+
 const data = {
     elapsedMilliseconds: 0,
     count: 359,
@@ -329,31 +329,22 @@ const data = {
   const paintings = data.artObjects
       //console.log(paintings)
 
-  //my function
-
- 
 
   for  (x=0; x<data.artObjects.length; x++){
 
       const currentPainting = paintings[x]
-      console.log(currentPainting)
       displayPainting(currentPainting)
   }
-  
+
   function displayPainting(painting){
-      //get title of pic
-     const _title_of_painting_ = paintings[x].title
-     //console.log(_title_of_painting_)
-
-      //get url op pic
-     const _url_of_web_image_ = paintings[x].webImage.url 
-     //console.log(_url_of_web_image_)
-
+      
+     const _title_of_painting_ = paintings[x].title //get title of pic
+     const _url_of_web_image_ = paintings[x].webImage.url //get url op pic
+    
      //create link element
      const link = document.createElement('a')
-     //console.log(link)
      link.href = "./pages/detail-page.html"
-     
+
      //create img elem
     const image = document.createElement('img')
     image.src = _url_of_web_image_
@@ -363,13 +354,6 @@ const data = {
 
     const gallery = document.getElementById("galery")
     gallery.appendChild(link)
-
-
-    console.log(paintings[x].webImage)
-
-
-    
-
 
   }
  
