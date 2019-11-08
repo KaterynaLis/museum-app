@@ -331,8 +331,16 @@ const data = {
 
   //my function
 
+ 
+
   for  (x=0; x<data.artObjects.length; x++){
 
+      const currentPainting = paintings[x]
+      console.log(currentPainting)
+      displayPainting(currentPainting)
+  }
+  
+  function displayPainting(painting){
       //get title of pic
      const _title_of_painting_ = paintings[x].title
      //console.log(_title_of_painting_)
@@ -346,18 +354,22 @@ const data = {
      //console.log(link)
      link.href = "./pages/detail-page.html"
      
-     
      //create img elem
     const image = document.createElement('img')
     image.src = _url_of_web_image_
     image.alt = _title_of_painting_
     image.classList.add("ArtObject")
-
     link.appendChild(image)
 
     const gallery = document.getElementById("galery")
-
     gallery.appendChild(link)
 
+
     console.log(paintings[x].webImage)
+
+
+    
+
+
   }
+ 
